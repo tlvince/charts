@@ -116,7 +116,8 @@ spec:
           image: busybox:1.27.1
           command: ['sh', '-c']
           args:
-            - cp /templates/hello-world.xml /opt/nifi/data/templates/
+            - echo "hello"
+            # - cp /templates/hello-world.xml /opt/nifi/data/templates/
           volumeMounts:
             - name: "data"
               mountPath: /opt/nifi/data
